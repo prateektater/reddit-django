@@ -20,5 +20,6 @@ import accounts.views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^signup/', accounts.views.signup, name = 'signup'),
+    url(r'^loginview/', accounts.views.loginview, name = 'loginview'),
 
 ]

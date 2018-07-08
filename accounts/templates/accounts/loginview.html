@@ -1,0 +1,21 @@
+<h1>Sign In!</h1>
+
+{%if error%}
+
+{{error}}
+
+{%endif%}
+
+<form method = 'POST' action="{url 'loginview'}">
+	{% csrf_token %}
+	Username:
+	<input type="text" name="username">
+	<br>
+
+	Password:
+	<input type="password" name="password">
+	<br>
+	<br>
+	<input type="submit" value="Sign In">
+
+</form>
